@@ -1,0 +1,27 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-image: linear-gradient(rgb(255, 146, 228), rgb(131, 21, 30));
+    background-repeat: no-repeat;
+    overflow: auto;
+}
+
+.contentBody {
+    display: flex;
+    justify-content: space-evenly;
+    color: aliceblue;
+}
+
+#currentProducts { /* Espacio para los productos en el carrito */
+    border: 5px solid rgba(240, 248, 255, 0.5);
+    border-radius: 20px;
+    width: calc(20vw);
+}
+
+#buyStuff { /* Espacio para los precios a pagar */
+    width: calc(20vw);
+    height: calc(40vh);
+    border: 5px solid rgba(240, 248, 255, 0.5);
+    border-radius: 20px;
+    display: inline-block;
+}

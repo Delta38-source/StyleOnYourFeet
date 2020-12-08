@@ -1,0 +1,48 @@
+/* Este css contiene los estilos del footer de la pagina */
+
+.webFooter { /* Color, tamaño, y display del footer */
+    background-color: rgb(34, 34, 34);
+    color: aliceblue;
+    width: calc(100vw);
+    height: calc(40vh);
+    border-top: 2px solid rgb(99, 154, 255);
+}
+
+#linksDiv { /* Este div simplemente ayuda a acomodar entre columnas los links del footer */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footerColums { /* Este bloque mueve el contenido de cada section al centro */
+    width: calc(35vw);
+    display: grid;
+    justify-content: center;
+}
+
+/* Los siquientes dos bloques cambian los links del footer */
+.footerLinks,li,a:visited {
+    text-decoration: none;
+    color: rgb(156, 165, 172);
+}
+
+.footerLinks,li,a:link {
+    text-decoration: none;
+    color: rgb(156, 165, 172);
+    list-style: none;
+}
+
+#copyright {
+    display: flex;
+    justify-content: center;
+}
+
+/* Diseño del footer en pantallas menores a 700px */
+@media(max-width: 700px) {
+    .webFooter { /* Color, tamaño, y display del footer */
+        background-color: rgb(34, 34, 34);
+        color: aliceblue;
+        width: calc(100vw);
+        height: calc(30vh);
+        border-top: 2px solid rgb(99, 154, 255);
+    }
+}

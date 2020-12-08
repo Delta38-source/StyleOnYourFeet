@@ -1,0 +1,138 @@
+/* Este css maneja el header principal de la pagina, este contiene el estilo de la barra de buscqueda y logo */
+
+/* // HEADER // */
+
+.webHeader { /* Tamaño del header y alineamiento de los objetos dentro de él */
+    background-color: rgb(51, 51, 51);
+    width: calc(100vw);
+    height: calc(15vh);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#logo { /* Tamaño del logo */
+    width: calc(10vw);
+    height: calc(5vh);
+    transform: scale(3);
+}
+
+.search { /* Este es el input de busqueda */
+    width: calc(60vw);
+    height: calc(5vh);
+    background-color: rgb(51, 51, 51);
+    color: aliceblue;
+    border-style: solid;
+    font-size: medium;
+}
+
+::placeholder { /* Estas líneas afectan el placeholder del input de busqueda */
+    color: rgb(100, 100, 100);
+    opacity: 1;
+}
+
+#searchBtn{ /* Este es el boton para la busqueda */
+    background-color: rgb(57, 33, 190);
+    width: calc(12vw);
+    height: calc(5vh);
+    color: aliceblue;
+    border-style: none;
+    font-size: larger;
+}
+
+/* // NAV // */
+
+/* Esta parte contiene los estilos de la barra de navegación, el cual va siempre pegado con este header */
+
+#navArea { /* Modificar la forma de alinear los botones del Nav */
+    display: inline-flex;
+}
+
+.dealBtn { /* Botones de ofertas */
+    background-color: rgb(65, 92, 117);
+    border-style: none;
+    width: calc(20vw);
+    height: calc(7vh);
+    color: aliceblue;
+    font-size: large;
+}
+
+.userBtn { /* Botones de login y carrito */
+    background-color: rgb(32, 46, 59);
+    border-style: none;
+    width: calc(20vw);
+    height: calc(7vh);
+    color: aliceblue;
+    font-size: large;
+}
+
+#carBtn { /* Estilos para alinear el diseño del boton carrito */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logBtn { /* Estilo para el bóton de inicio de sesión */
+    font-weight: bold;
+}
+
+#shopCar_svg { /* Tamaño para el icono del carrito */
+    transform: scale(1);
+    width: calc(5vw);
+    height: calc(5vh);
+}
+
+/* Diseño del header en pantallas menores a 700px */
+@media(max-width: 700px) {
+    .webHeader { /* Tamaño del header y alineamiento de los objetos dentro de él */
+        background-color: rgb(51, 51, 51);
+        width: calc(100vw);
+        height: calc(20vh);
+        display: grid;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    #logo { /* Tamaño del logo */
+        width: calc(68vw);
+        height: calc(3vh);
+        transform: scale(2.5);
+    }
+
+    .search { /* Este es el input de busqueda */
+        width: calc(70vw);
+        height: calc(4vh);
+        background-color: rgb(51, 51, 51);
+        color: aliceblue;
+        border-style: solid;
+        font-size: medium;
+    }
+    
+    #searchBtn{ /* Este es el boton para la busqueda */
+        background-color: rgb(57, 33, 190);
+        width: calc(70vw);
+        height: calc(3vh);
+        color: aliceblue;
+        border-style: none;
+        font-size: larger;
+    }
+
+    .dealBtn { /* Botones de ofertas */
+        display: none;
+        background-color: rgb(65, 92, 117);
+        border-style: none;
+        width: calc(20vw);
+        height: calc(7vh);
+        color: aliceblue;
+        font-size: large;
+    }
+
+    .userBtn { /* Botones de login y carrito */
+        background-color: rgb(32, 46, 59);
+        border-style: none;
+        width: calc(50vw);
+        height: calc(7vh);
+        color: aliceblue;
+        font-size: large;
+    }
+}

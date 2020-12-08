@@ -1,0 +1,54 @@
+/* Este css contiene los estilos para el contenido principal de la pagina de inicio */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-image: linear-gradient(rgb(255, 146, 228), rgb(131, 21, 30));
+    background-repeat: no-repeat;
+    overflow: scroll;
+}
+
+.contentBody {
+    width: calc(100vw);
+}
+
+.productLine { /* Colores de las lineas de productos visibles */
+    background-color: rgb(80, 0, 70);
+    color: aliceblue;
+}
+
+.products { /* Este bloque es simplemente para alinear las imagenes de los productos al centro */
+    display: flex;
+    justify-content: center;
+}
+
+.articles { /* Tamaños de las imagenes de los productos */
+    width: calc(20vw);
+    height: calc(20vh);
+    margin-left: 20px;
+}
+
+@media(max-width: 700px) {
+    .contentBody {
+        width: calc(100vw);
+        height: calc(45vh);
+    }
+
+    .productLine { /* Colores de las lineas de productos visibles */
+        background-color: rgb(80, 0, 70);
+        color: aliceblue;
+        height: calc(20vh);
+    }
+
+    .products { /* Este bloque es simplemente para alinear las imagenes de los productos al centro */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .articles { /* Tamaños de las imagenes de los productos */
+        width: calc(25vw);
+        height: calc(10vh);
+        margin-left: 20px;
+    }
+}
